@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sally="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.sally.customprogressbar.views.HorizontalProgressBarWithProgress
+            android:id="@+id/id_pr1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:progress="50"
+            sally:progress_reach_color="#f00"
+            sally:progress_text_color="#f00"
+            sally:progress_unreach_color="#0f0" />
+
+        <com.sally.customprogressbar.views.HorizontalProgressBarWithProgress
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:progress="30"
+            sally:progress_reach_color="#f00"
+            sally:progress_text_color="#f00"
+            sally:progress_unreach_color="#0f0" />
+
+        <com.sally.customprogressbar.views.HorizontalProgressBarWithProgress
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:progress="80"
+            sally:progress_reach_color="#f00"
+            sally:progress_text_color="#f00"
+            sally:progress_unreach_color="#0f0" />
+
+        <com.sally.customprogressbar.views.RoundProgressBarWithProgress
+            android:id="@+id/id_rp1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:progress="20"
+            sally:progress_reach_color="#0f0"
+            sally:progress_text_color="#000"
+            sally:progress_unreach_color="#00f"
+            sally:radius="40dp" />
+    </LinearLayout>
+</ScrollView>
